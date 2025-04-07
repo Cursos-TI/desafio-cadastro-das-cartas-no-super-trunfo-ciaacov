@@ -8,14 +8,15 @@ int main()
     printf("        BEM-VINDO AO SUPER TRUNFO        \n");
     printf("=========================================\n");
     printf(" Você irá cadastrar duas cartas com os seguintes dados:\n\n");
-    printf(" Estado com uma letra maiúscula de A a H | Ex: B\n");
+    printf("                                     |");
     printf(" Código da carta 1 (A01-A04)         | Ex: A03\n");
     printf(" Código da carta 2 (B01-B04)         | Ex: A02\n");
+    printf(" Estado letra maiúscula de A a H     | Ex: B\n");
     printf(" Nome da cidade                      | Ex: Belo Horizonte\n");
     printf(" População                           | Ex: 12325000\n");
-    printf(" Área (em km²)                               | Ex: 1521.11\n");
+    printf(" Área (em km²)                       | Ex: 1521.11\n");
     printf(" PIB (em bilhões de R$)              | Ex: 699.28\n");
-    printf(" Número de pontos turísticos         | Ex: 50\n");
+    printf(" Quantidade de pontos turísticos         | Ex: 50\n");
     printf("=========================================\n\n");
 
     // Declaração de variáveis da primeira carta
@@ -40,12 +41,14 @@ int main()
 
     // Solicitação de dados para a primeira carta
 
-    printf("CARTA 1:\n");
+    printf(">>> CARTA 1 <<<\n");
+    printf("\n");
     printf("Codigo: "); // Solicita o código
     scanf("%s", codigo_1);       // Lê o código
 
     printf("Estado: ");    // Solicita o estado
     scanf(" %c", &estado_1); // Lê o estado corretamente
+    getchar();
 
     printf("Nome da cidade: ");               // Solicita o nome da cidade
     fgets(cidade_1, sizeof(cidade_1), stdin); // Lê o nome da cidade com espaço
@@ -54,23 +57,25 @@ int main()
     printf("População: ");     // Solicita a população
     scanf("%d", &populacao_1); // Lê a população
 
-    printf("Área (km²): "); // Solicita a área
+    printf("Área: "); // Solicita a área
     scanf("%f", &area_1);   // Lê a área
 
-    printf("PIB (em bilhões R$): "); // Solicita o PIB
+    printf("PIB: "); // Solicita o PIB
     scanf("%f", &pib_1);             // Lê o PIB
 
-    printf("Número de pontos turísticos: "); // Solicita o número de pontos turísticos
+    printf("Quantidade de pontos turísticos: "); // Solicita o número de pontos turísticos
     scanf("%d", &pontos_turisticos_1);       // Lê o número de pontos turísticos
-
+    printf("\n");
     // Solicitação de dados para a segunda carta
 
-    printf("CARTA 2:\n");
+    printf(">>> CARTA 2 <<<\n");
+    printf("\n");
     printf("Código: "); // Solicita o código
     scanf("%s", codigo_2);       // Lê o código
 
     printf("Estado: ");    // Solicita o estado
     scanf(" %c", &estado_2); // Lê o estado corretamente
+    getchar();
 
     printf("Nome da cidade: ");               // Solicita o nome da cidade
     fgets(cidade_2, sizeof(cidade_2), stdin); // Lê o nome da cidade com espaço
@@ -85,14 +90,17 @@ int main()
     printf("PIB (em bilhões R$): "); // Solicita o PIB
     scanf("%f", &pib_2);             // Lê o PIB
 
-    printf("Número de pontos turísticos: "); // Solicita o número de pontos turísticos
+    printf("Quantidade pontos turísticos: "); // Solicita o número de pontos turísticos
     scanf("%d", &pontos_turisticos_2);       // Lê o número de pontos turísticos
+
+    printf("\n>>> Cartas cadastradas com sucesso <<<\n");
 
     // Exibição dos dados da primeira carta
 
-    printf("\n\nDados da primeira carta:\n");                         // Exibe os dados da primeira carta
-    printf("Estado: %c\n", estado_1);                                 // Exibe o estado
+    printf("\nDados carta 1:\n");
+    printf("\n");                         // Exibe os dados da primeira carta
     printf("Código: %s\n", codigo_1);                                 // Exibe o código
+    printf("Estado: %c\n", estado_1);                                 // Exibe o estado
     printf("Nome da Cidade: %s\n", cidade_1);                         // Exibe o nome da cidade
     printf("População: %d\n", populacao_1);                           // Exibe a população
     printf("Área: %.2f km²\n", area_1);                               // Exibe a área
@@ -101,9 +109,10 @@ int main()
 
     // Exibição dos dados da segunda carta
 
-    printf("\n\nDados da segunda carta:\n");                          // Exibe os dados da segunda carta
+    printf("\n\nDados carta 2:\n");
+    printf("\n");
+    printf("Código: %s\n", codigo_2);                                 // Exibe o código                                                     // Exibe os dados da segunda carta
     printf("Estado: %c\n", estado_2);                                 // Exibe o estado
-    printf("Código: %s\n", codigo_2);                                 // Exibe o código
     printf("Nome da Cidade: %s\n", cidade_2);                         // Exibe o nome da cidade
     printf("População: %d\n", populacao_2);                           // Exibe a população
     printf("Área: %.2f km²\n", area_2);                               // Exibe a área
