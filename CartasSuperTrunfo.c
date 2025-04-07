@@ -4,20 +4,20 @@
 int main()
 {
     // Introdução ao jogo
-    printf("=========================================\n");
-    printf("        BEM-VINDO AO SUPER TRUNFO        \n");
-    printf("=========================================\n");
-    printf(" Você irá cadastrar duas cartas com os seguintes dados:\n\n");
-    printf("                                     |");
-    printf(" Código da carta 1 (A01-A04)         | Ex: A03\n");
-    printf(" Código da carta 2 (B01-B04)         | Ex: A02\n");
-    printf(" Estado letra maiúscula de A a H     | Ex: B\n");
-    printf(" Nome da cidade                      | Ex: Belo Horizonte\n");
-    printf(" População                           | Ex: 12325000\n");
-    printf(" Área (em km²)                       | Ex: 1521.11\n");
-    printf(" PIB (em bilhões de R$)              | Ex: 699.28\n");
-    printf(" Quantidade de pontos turísticos         | Ex: 50\n");
-    printf("=========================================\n\n");
+    printf("|=========================================================|\n");
+    printf("|        BEM-VINDO AO SUPER TRUNFO         |              |\n");
+    printf("|==========================================|=== Países ===|\n");
+    printf("|  ### Você irá cadastrar duas cartas ###  |              |\n");
+    printf("|                                          |______________|\n");
+    printf("| Código da carta 1 (A01-A04)              | Ex: A03      |\n");
+    printf("| Código da carta 2 (B01-B04)              | Ex: B02      |\n");
+    printf("| Estado letra maiúscula de A a H          | Ex: A        |\n");
+    printf("| Nome da cidade                           | Ex: Manaus   |\n");
+    printf("| População                                | Ex: 12325000 |\n");
+    printf("| Área (em km²)                            | Ex: 1521.11  |\n");
+    printf("| PIB (em bilhões de R$)                   | Ex: 699.28   |\n");
+    printf("| Quantidade de pontos turísticos          | Ex: 50       |\n");
+    printf("|=========================================================|\n");
 
     // Declaração de variáveis da primeira carta
     char codigo_1[10];
@@ -36,7 +36,8 @@ int main()
     float area_2 = 0;
     float pib_2 = 0;
     int pontos_turisticos_2 = 0;
-
+    
+    printf("\n");
     printf("Vamos cadastrar duas cartas!\n\n");
 
     // Solicitação de dados para a primeira carta
